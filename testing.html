@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Emergency Contact Form</title>
+</head>
+<style>
+    #title{
+        background-color: rgba(80, 56, 216, 0.658);
+        height: 30px;
+        width: 1250px;
+        margin-left: 30px;
+        margin-top: 10px;
+
+    }
+    #buttons{
+        background-color: darkgrey;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 1250px;
+        margin-right: 0px;
+    }
+    #column1{
+        padding-left: 30px;
+    }
+    #column1 label{
+      margin-bottom: 20px;
+      margin-right: 0px;
+    }
+    #column2{
+      margin-top: 20px;
+      margin-left: 0px;
+    }
+    #column2 input,select,textarea{
+      margin-bottom: 17px;
+      margin-left: 0px;
+    }
+    #column3{
+      margin-top: 10px;
+    }
+    #column3 label,select{
+      margin-left: 0px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    #column4{
+      margin-top: 47px;
+    }
+    #column4 input,select,textarea{
+      margin-bottom: 10px;
+    }
+    #body{
+        margin: 0px;
+    }
+</style>
+<body id="body">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <div class="row">
+        <div id="title">
+        <h4>Emergency Contact Info</h4>
+    </div><br><br>
+    <!--Column-1-->
+        <div class="col-3" id="column1">
+        <form>
+            <br>
+            <label>First Name*</label>
+            <br>
+            <label>Last Name</label>
+            <br>
+            <label>Gender</label>
+            <br>
+            <label>Date of Birth</label>
+            <br>
+            <h5><u>Medical Information</u></h5>
+            
+            <label>Hospital Preference</label>
+            <br>
+            <label>Insurance Company</label>
+            <br>
+            <label>Policy Number</label>
+            <br>
+            <label>Physician's Name</label>
+            <br>
+            <label>Allergies(if any)</label>
+            </form>
+            </div>
+            <!--column-2-->
+            <div class="col-3" id="column2">
+              <input type="text" name="name" id="FirstName" required>
+              <br><input type="text" name="LastName" id="LastName" >
+              <br><select>
+                <option>None</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+             <br><input type="date" id="DOB">
+              <br><br><input type="text" id="HP">
+              <br><input type="text" id="IC">
+              <br><input type="text" id="PN">
+              <br><input type="number" id="PH">
+              <br><textarea rows="1" cols="20"></textarea>
+            </div>
+            <!--column-3-->
+            <div class="col-sm-3" id="column3">
+                <h5><u>Emergency Contact Info</u></h5>
+                
+                <label>Name</label>
+                <br>
+                <label>Relationship</label>
+                <br>
+                <label>Address</label>
+                <br>
+                <label>City</label>
+                <br>
+                <label>State</label>
+                <br>
+                <label>Country</label>
+                <br>
+                <label>Home Number</label>
+                <br>
+                <label>Work Phone</label>
+               </div>
+               <!--Column-4-->
+            <div class="col-sm-2" id="column4">
+             <input type="text" id="Name">
+              <input type="text" id="Relationship">
+              <textarea rows="1" cols="20"></textarea>
+              <input type="text" id="city">
+              <br><select>
+                <option>Federal</option>
+                <option>Provisional</option>
+            </select>
+            <br><select>
+              <option>Pakistan</option>
+              <option>India</option>
+              <option>China</option>
+              <option>America</option>
+          </select>
+          <br><input type="number" id="HN">
+          <input type="number" id="WP"> 
+            </div>
+    </div>
+    <div id="buttons">
+        <button class="btn-outline-primary">Submit</button>
+        <button class="btn-outline-danger">Reset</button>
+    </div>
+</body>
+</html>
